@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>challenge:1 - stage:2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body,html{
+        overflow-x: hidden;
+        top:0%;
+        left: 0;
+        right:0;
+        margin: 0%;
+        padding:0%;
+        background-color:rgb(64, 110, 148);
+    }
+    nav{
+        background-color:grey;
+        width:100%;
+        height:6em;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-color: black;
+        padding-bottom:10px;
+        position: fixed;
+    }
+    p{
+        margin-top:0;
+    }
+    .search{
+        padding-top:10px;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        width:80%;
+    }
+    .search input{
+        width:90%;
+        height:20px;
+        border-color:black;
+    }
+    .search button{
+        width:40px;
+        height:24px;
+        border-radius:10px;
+
+    }
+    .butt{
+        background-color:grey;
+        border-color:grey;
+        margin-right:10px;
+    }
+    form{
+        width:80%;
+    }
+    #graph{
+        border-radius:15px;
+        border:black 2px solid;
+        height:300px;
+        width:80%;
+        margin:auto;
+        background-color:#ddd;
+        display: grid;
+        grid-template-areas:
+        "uno dos tres"
+        "one two three"
+        "finger hand arm";
+    }
+    #uno{
+        grid-area:uno;
+        display: inline-block;
+        text-align: center;
+    }
+    #dos{
+        grid-area:dos;
+        display: inline-block;
+        text-align: center;
+    }
+    #tres{
+        grid-area:tres;
+        display: inline-block;
+        text-align: center;
+    }
+    #round1{
+        height:100px;
+        width:100px;
+        background-color:grey;
+        grid-area: two;
+        border-radius:50%;
+        border:black 2px solid;
+        margin:auto;
+        margin-top:0; 
+    }
+    #round2{
+        height:100px;
+        width:100px;
+        background-color:grey;
+        grid-area: one;
+        border-radius:50%;
+        border:black 2px solid;
+        margin:auto;
+        margin-top:0;
+    }
+    #round3{
+        height:100px;
+        width:100px;
+        background-color:grey;
+        grid-area: three;
+        border-radius:50%;
+        border:black 2px solid;
+        margin:auto;
+        margin-top:0;
+    }
+    #finger{
+        text-align: center;
+        border:black 2px solid;
+        width:120px;
+        height:30px;
+        grid-area: finger;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: white;
+    }
+    #hand{
+        text-align: center;
+        border:black 2px solid;
+        width:120px;
+        height:30px;
+        grid-area: hand;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: white;
+    }
+    #arm{
+        text-align: center;
+        border:black 2px solid;
+        width:120px;
+        height:30px;
+        grid-area: arm;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: white;
+    }
+    .graph-head{
+        display:inline-block;
+    }
+    footer{
+        background-color:grey;
+        border:black 2px solid;
+        height:50px;
+        width:100%;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <p style="text-align:center">Landing Page</p>
+            <button class="butt"><i style="font-size: 40px" class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></button>
+                <button class="butt"><i style="font-size: 40px" class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+                <button class="butt"><i style="font-size: 40px" class="fa fa-times" aria-hidden="true"></i></button>
+                <button class="butt"><i style="font-size: 40px" class="fa fa-home" aria-hidden="true"></i></button>
+                <form class="search" style="float:right" action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button style="border:black 2px solid;" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+        </nav>
+    </header>
+    <div style="margin-top:10em">
+        <p style="margin-top:40px;margin-right: 135px;text-align: right">This is just some text that you're not supposed to read</p>
+        <div id="graph">
+            <div id="uno"><p style="margin-top:20px;">Survey</p></div>
+            <div id="dos"><p style="margin-top:20px;">Report</p></div>
+            <div id="tres"><p style="margin-top:20px;">Elearning</p></div>
+            <div id="round1">   
+            </div>
+            <div id="round2">
+            </div>
+            <div id="round3">
+            </div>
+            <button id="finger">Start Survey</button>
+            <button id="hand">Access Report</button>
+            <button id="arm">Access Learning</button>
+        </div>
+    </div>
+    <hr style="margin-top:100px; color:black; border:black 1px solid;width: 95%">
+    <div></div>
+    <footer style="margin-top:80px"></footer>
+</body>
+</html>
