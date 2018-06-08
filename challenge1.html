@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>challenge:1 - stage:2</title>
+    <title>challenge:1 - stage:1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -14,47 +14,37 @@
         left: 0;
         right:0;
         margin: 0%;
+        /* margin-top:2em; */
         padding:0%;
-        background-color:rgb(64, 110, 148);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* background-color:rgb(64, 110, 148); */
+        /* background-color: #ddd; */
+        background-image:url(http://globalmedicalco.com/photos/globalmedicalco/2/8613.jpg);
+    }
+    h1{
+        font-weight: lighter;
+        text-align: center;
+        /* color:whitesmoke; */
+        font-size:70px;
+        margin-top:110px;
     }
     nav{
         background-color:grey;
         width:100%;
         height:6em;
-        border-top-style: solid;
+        /* border-top-style: solid;
         border-bottom-style: solid;
-        border-color: black;
+        border-color: black; */
         padding-bottom:10px;
-        position: fixed;
+        margin-bottom:50px;
+        position:fixed;
     }
     p{
         margin-top:0;
+        color:aliceblue;
     }
-    .search{
-        padding-top:10px;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-        width:80%;
-    }
-    .search input{
-        width:90%;
-        height:20px;
-        border-color:black;
-    }
-    .search button{
-        width:40px;
-        height:24px;
-        border-radius:10px;
-
-    }
-    .butt{
-        background-color:grey;
-        border-color:grey;
-        margin-right:10px;
-    }
-    form{
-        width:80%;
+    h2{
+        color:aliceblue;
     }
     #graph{
         border-radius:15px;
@@ -93,6 +83,7 @@
         border:black 2px solid;
         margin:auto;
         margin-top:0; 
+        background-image:url();
     }
     #round2{
         height:100px;
@@ -103,6 +94,7 @@
         border:black 2px solid;
         margin:auto;
         margin-top:0;
+        background-image:url();
     }
     #round3{
         height:100px;
@@ -113,6 +105,7 @@
         border:black 2px solid;
         margin:auto;
         margin-top:0;
+        background-image:url();
     }
     #finger{
         text-align: center;
@@ -153,32 +146,43 @@
         height:50px;
         width:100%;
     }
+    #finger:hover,#hand:hover,#arm:hover{
+        background-color:grey;
+        color:#d2295a;
+    }
+    #shell{
+        padding-top:25px;
+        padding-bottom:50px;
+        width:100%;
+        margin:auto;
+        margin-top:9em;
+        border-radius:15px;
+        background-color: grey;
+        background-image:url(http://backgroundcheckall.com/wp-content/uploads/2017/12/black-background-images-for-websites-professional-11.jpg);
+    }
 </style>
 <body>
     <header>
         <nav>
-            <p style="text-align:center">Landing Page</p>
-            <button class="butt"><i style="font-size: 40px" class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></button>
-                <button class="butt"><i style="font-size: 40px" class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
-                <button class="butt"><i style="font-size: 40px" class="fa fa-times" aria-hidden="true"></i></button>
-                <button class="butt"><i style="font-size: 40px" class="fa fa-home" aria-hidden="true"></i></button>
-                <form class="search" style="float:right" action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button style="border:black 2px solid;" type="submit"><i class="fa fa-search"></i></button>
-                </form>
+            <h2 style="margin-top:0;margin-bottom:0;margin-left:20px;color:#d2295a;font-size:40px">
+                <p style="color:black;margin-bottom:0;margin-top:20px;font-size:20px">the</p>Belladonna
+            </h2>
         </nav>
     </header>
-    <div style="margin-top:10em">
-        <p style="margin-top:40px;margin-right: 135px;text-align: right">This is just some text that you're not supposed to read</p>
+    <div id="shell" style="margin-top:10em">
+        <p style="margin-bottom:10;margin-right: 135px;text-align: right">This is just some text that you're not supposed to read</p>
         <div id="graph">
             <div id="uno"><p style="margin-top:20px;">Survey</p></div>
             <div id="dos"><p style="margin-top:20px;">Report</p></div>
             <div id="tres"><p style="margin-top:20px;">Elearning</p></div>
-            <div id="round1">   
+            <div id="round1"> 
+                <img src="pie-1.jpg" style="width:100px;height:100px;border-radius:50%;" alt="">  
             </div>
             <div id="round2">
+                <img src="pie-1.jpg" style="width:100px;height:100px;border-radius:50%;" alt="">  
             </div>
             <div id="round3">
+                <img src="pie-1.jpg" style="width:100px;height:100px;border-radius:50%;" alt="">  
             </div>
             <button id="finger">Start Survey</button>
             <button id="hand">Access Report</button>
