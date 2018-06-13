@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challege2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        p{
+            color:grey;
+        }
+        a{
+            color:inherit;
+        }
+        .row{
+            padding:2em;
+            background-color:#fff;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+        #nav{
+            padding-top:0;
+            padding-bottom:0;
+        }
+        h2{
+            display: inline-block;
+            color:black;
+        }
+        .h2{
+            margin-left:100px;
+        }
+        button{
+            border:none;
+            width:100px;
+        }
+        h1, h2, h3, h1, h2, h3{
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            margin-left:210px;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .num-color{
+            color:#e95715;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .but{
+            color:#e95715;
+            background-color:inherit;
+            border-radius:5px;
+            border:#e95715 1px solid;
+            margin-left:0;
+            margin-right:0;
+            margin-top:1em;
+            display:inline-block;
+            padding:1em;width:15em;
+            border-radius:5px;
+        }
+        .but:hover{
+            background-color:#e95715;
+            color:white;
+        }
+        .left-side-div{
+            margin-left:2em;
+            float:left;
+            margin-right:2em;
+            margin-bottom:2em;
+            padding:2em;
+            background-color:#fff;
+            height:450px;
+            width:800px;
+            display: inline-block;
+            height:100%;
+        }
+        .right{
+            float:left;
+            width:30%;
+            margin-right: 40px;
+        }
+        .fourty{
+            width:20%;
+            height:100px;
+        }
+        .boot-img-div{ 
+            display:inline-block;
+            background: #fff;
+            width:30%;
+            margin-left:28px;
+        }
+        #trial{
+            display: block;
+            width: 200px;
+            margin-left:100px;
+            margin-bottom:25px;
+        }
+        @media screen and (max-width:320px){
+            html,body{
+                padding:0;
+                margin:0;
+                overflow-x:hidden;
+            }
+            #nav{
+                margin:0;
+                width:100%;
+            }
+            .but{
+                display:block;
+            }
+            h1,h2,h3,h4,h5{
+                display:block;
+            }
+            .left-side-div{
+                margin-left:0;
+                margin-right:0;
+                height:max-content;
+            }
+            .h2{
+                margin-left:0;
+            }
+            span{
+                display:block;
+            }
+            .half-jpg{
+                width:35%;
+            }
+            .half-img-text{
+                text-align:left;
+                display:inline-block;
+                width:170px;
+            }
+            #img-div1,#img-div2{
+                margin-top:10px;
+                margin-bottom:10px;
+                background-color:#fff;
+                display:inline-block;
+                border:#bbb 1px;
+            }
+            .right{
+                float:none;
+                width:100%;
+            }
+            h4{
+                margin-top:40px;
+            }
+            .boot-img-div{
+                display:block;
+                width:90%;
+                margin-bottom:10px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            fourty{
+                width:40%;
+            }
+            #trial{
+                margin-left: 0.75em;
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header style="margin-bottom:2em;">
+        <nav id="nav"class="row">
+            <div class="col-xs-12 col-md-8"><h2 style="color:#e95715;display:inline-block">Hyperion</h2><h2 style="display:inline-block">Dev</h2><h2 class="h2" style="color:#e95715;">Full Stack Web Development</h2></div>
+            <div class="col-xs-6 col-md-4 dropdown">
+                <a><h2 class="h2">Profile</h2></a>
+                    <div class="dropdown-content">
+                        <a href="#">Edit Profile</a>
+                        <a href="#">Log Out</a>
+                    </div>
+            </div>
+        </nav>                  
+    </header>
+    <!-- left side of the webpage -->
+    <div class="left-side-div">
+        <div class="col-md-2" style="border-radius:15px;">
+            <img style="width:12em" src="https://photos-5.dropbox.com/t/2/AADqVAWb5R66FDsoiHIGZ3Y81zvVQqiBWRNevH4_286cbQ/12/1182348752/png/32x32/3/1528736400/0/2/beginner-php-fundamentals%402x.png/ENC344gMGBggAigC/dKwRj-LJpjAt1LzGyAeRvWDQn84TX0II8iiGO6wQrkQ?dl=0&preserve_transparency=1&size=1280x960&size_mode=3">
+        </div>
+        <div style="margin-bottom:2em" class="col-md-7">
+            <h1>Web Developement Bootcamp Trial</h1>
+            <button style="padding:1em;width:15em; border-radius:5px;background-color:#e95715" class="btn-warning">Continue Your Trial</button>
+        </div>
+        <hr style="color:#ddd;width:100%;">
+        <div class="col-md-6">
+            <h2 style="display:block">Your progress<span style="font-weight: lighter">(1/4)Complete</span></h2> <!-- some javascript to display progress-->
+            <div>
+                    <button class="btn-warning but">Industry Knowledge1</button>
+                    <button class="btn-warning but">Industry Knowledge2</button>
+            </div>
+            <div>
+                    <button class="btn-warning but">HTML basics</button>
+                    <button class="btn-warning but">Your first PHP script</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="right col-md-6">
+        <h4 style="display:block">Your Coding Journey</h4>
+        <div>
+            <h1 class="num-color" style="display:inline-block;margin:5px">1</h1><p style="display:inline-block">Total Programs Written</p>
+        </div>
+        <div>
+            <h1 class="num-color" style="display:inline-block;margin:5px">4</h1><p style="display:inline-block">Total Code Written</p>
+        </div>
+    </div>
+
+    <hr class="right" style="color:#2c2929">
+
+    <div class="right col-md-6">
+        <h4 style="display:block">Get more information</h4>
+        <p>
+            We're ready to help with any questions you may have about our Bootcamps and Mentor Support.
+        </p>
+        <div>
+            <button style="margin:1em;display:inline-block; padding:1em;width:10em; border-radius:5px;" class="btn-warning but">Book a call</button>
+            <button style="margin:1em;display:inline-block; padding:1em;width:15em; border-radius:5px;" class="btn-warning but">Join an info session</button>
+        </div>
+    </div>
+
+    <hr class="right" style="color:#2c2929">
+
+    <div class="right col-md-6">
+        <h4 style="display:block">Upgrade to the full Bootcamp</h4>
+        <p>
+            Our next cohort starts 3 January 2018
+        </p>
+        <button style="margin:1em;display:inline-block; padding:1em;width:15em; border-radius:5px;" class="btn-warning but">Reserve your spot</button>
+    </div>
+
+    <div>
+        <h4 id="trial">Trial another Bootcamp</h4>
+        <div class="boot-img-div">
+            <img class="fourty" src="https://photos-2.dropbox.com/t/2/AAB7tO44r82492Jb2D-V7adcfKjDAFRl9EoAGAmV6Y34mA/12/1182348752/png/32x32/3/1528891200/0/2/layer-115%402x.png/ENC344gMGBggAigC/CF6Kc35klxbGNpjELuHT8iqpvuJZ0MP-NwJCmW_1RbE?dl=0&preserve_transparency=1&size=1280x960&size_mode=3" alt="">
+            <b>Mobile Developer Bootcamp</b>
+        </div>
+        <div class="boot-img-div">
+            <img class="fourty" src="https://photos-5.dropbox.com/t/2/AAArc_YTPTBeqCO99TnzKwH7iU2fTmrmFvYEiAphRMPyJw/12/1182348752/png/32x32/3/1528891200/0/2/layer-114%402x.png/ENC344gMGBggAigC/ZFsFXMdr5CAlkzhptr_ZYWyjYPeaoBWgBFHkZYMDe58?dl=0&preserve_transparency=1&size=1280x960&size_mode=3" alt="">
+            <b>Software Engineer Bootcamp</b>
+        </div>
+    </div>
+    <footer style="margin-bottom:3em"></footer>
+</body>
+</html>
